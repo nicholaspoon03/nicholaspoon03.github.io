@@ -20,11 +20,35 @@
 
 .header-links-row {
   display: flex;
-  /* justify-content: right; */
   gap: 30px;
 }
 
 .header-links {
+  text-decoration: none;
+  color: #BEC7D5;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10rem;
+}
+
+.home-text {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+.location-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social-media-icons {
+  font-size: 400%;
   text-decoration: none;
   color: #BEC7D5;
 }
