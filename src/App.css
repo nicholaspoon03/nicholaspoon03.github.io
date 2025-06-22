@@ -38,7 +38,15 @@
 .home-text {
   display: flex;
   justify-content: center;
-  margin: 0px;
+  margin: 2px;
+}
+
+#name {
+  font-size: 64px;
+}
+
+#portrait {
+  border-radius: 100px;
 }
 
 .location-row {

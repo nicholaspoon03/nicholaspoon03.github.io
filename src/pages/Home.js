@@ -1,12 +1,18 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import portrait from '../assets/portrait.jpg'
 
 function Home() {
     return (
         <main>
             <div className="home-content">
-                <div style={{ height: '40px' }} />
-                <h1 className="home-text">Nicholas Poon</h1>
+                <div style={{ height: '150px' }} />
+
+                <div className="home-text">
+                    <img id="portrait" src={portrait} alt="portrait"></img>
+                </div>
+                <h1 id="name" className="home-text">Nicholas Poon</h1>
                 <span className="home-text">Mobile Engineering Intern @ Mozilla | Computer Science @ University of Toronto</span>
+                
                 <div className="location-row home-text">
                     <i className="bi bi-geo-alt-fill"></i>
                     <div style={{ width: '3px' }} />
@@ -35,6 +41,8 @@ function Home() {
                     on the AI for Discovery and Self-Driving Labs project.</p>
 
                 <p>Outside of work, I like cars, Formula One, badminton, skiing, and snowboarding.</p>
+
+                <div style={{ height: '50px' }} />
             </div>
         </main>
     )
