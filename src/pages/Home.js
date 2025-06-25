@@ -4,16 +4,16 @@ import portrait from '../assets/portrait.jpg'
 function Home() {
     return (
         <main>
-            <div className="home-content">
+            <div className="page-layout column">
                 <div style={{ height: '150px' }} />
 
-                <div className="home-text">
+                <div className="centre-page-content small-margin">
                     <img id="portrait" src={portrait} alt="portrait"></img>
                 </div>
-                <h1 id="name" className="home-text">Nicholas Poon</h1>
-                <span className="home-text">Mobile Engineering Intern @ Mozilla | Computer Science @ University of Toronto</span>
+                <h1 id="page-name" className="centre-page-content small-margin">Nicholas Poon</h1>
+                <span className="centre-page-content small-margin">Mobile Engineering Intern @ Mozilla | Computer Science @ University of Toronto</span>
                 
-                <div className="location-row home-text">
+                <div className="location-row small-margin centre-page-content">
                     <i className="bi bi-geo-alt-fill"></i>
                     <div style={{ width: '3px' }} />
                     <p1>Toronto, ON, CA</p1>
@@ -21,12 +21,10 @@ function Home() {
 
                 <div style={{ height: '40px' }} />
                 
-                <div className="home-text">
+                <div id="social-media-div" className="centre-page-content">
                     <a href="https://github.com/nicholaspoon03" target="_blank" rel="noreferrer">
                         <i className="bi bi-github social-media-icons"></i>
                     </a>
-
-                    <div style={{ width: '50px' }} />
 
                     <a href="https://www.linkedin.com/in/nicholas-poon/" target="_blank" rel="noreferrer">
                         <i className="bi bi-linkedin social-media-icons"></i>
