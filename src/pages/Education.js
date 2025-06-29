@@ -22,15 +22,6 @@ function Education() {
 
                 <div className="card">
                     <div className="centre-page-content column card-content">
-                        <b className="centre-page-content subheading">Achievements</b>
-                        <ul className="surround">
-                            <li>Dean's List of Scholars 2021-2022, 2022-2023, 2023-2024</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="card">
-                    <div className="centre-page-content column card-content">
                         <div id="uni-focuses-programs" className="centre-page-content">
                             <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689b" target="_blank" rel="noreferrer">
                                 <p>Artificial Intelligence Focus</p>
@@ -48,6 +39,15 @@ function Education() {
                                 <p>Research Opportunity Program</p>
                             </a>
                         </div>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="centre-page-content column card-content">
+                        <b className="centre-page-content subheading">Achievements</b>
+                        <ul className="surround">
+                            <li>Dean's List of Scholars 2021-2022, 2022-2023, 2023-2024</li>
+                        </ul>
                     </div>
                 </div>
 
