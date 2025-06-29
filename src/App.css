@@ -37,8 +37,8 @@
   color: #00D646;
 }
 
-
 .card {
+  width: 100%;
   border: 2px solid white;
   border-radius: 16px;
   box-shadow: 0 2px 4px #A1F1BB;
@@ -49,30 +49,29 @@
 }
 
 .card-content {
-  padding: 8px;
+  padding: 1rem 8px;
 }
 
 .page-layout {
   justify-content: center;
-  padding: 0 10rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
+  margin-bottom: 50px;
+}
+
+.page-layout * {
+  max-width: 1500px;
 }
 
 ul.surround {
   border-left: 4px solid #00D646;
   border-right: 4px solid #00D646;
   border-radius: 10px;
-  padding: 0.5rem 0 0.5rem 0.5rem;
+  padding: 0.5rem;
   margin: 1rem 1rem 1rem 0.5rem;
   list-style: none;
-}
-
-ul.surround:hover {
-  border-right: none;
-  transform: translate(2px, -2px);
-  box-shadow: 0 8px 16px gray;
 }
 
 .centre-page-content {
@@ -82,6 +81,31 @@ ul.surround:hover {
 
 .small-margin {
   margin: 2px;
+}
+
+.button {
+  display: inline-flex;
+  padding: 8px 18px;
+  align-items: flex-start;
+  border-radius: 4px;
+  border: 2px solid #00D646;
+  background: #1b1f27;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #00D646;
+}
+
+.button:hover {
+  background: #00D646;
+  color: #FFF;
+  border: 2px solid #FFF;
+}
+
+#education-div {
+  gap: 30px;
 }
 
 #page-name {
@@ -96,6 +120,21 @@ ul.surround:hover {
   border-radius: 100px;
 }
 
+#learn-more-cs-div {
+  padding-top: 1rem;
+}
+
+#uni-focuses-programs {
+  display: flex;
+  justify-content: space-between;
+  column-gap: clamp(1rem, 2rem, 3rem);
+}
+
+#uni-focuses-programs *:hover {
+  color: #A1F1BB;
+  cursor: pointer;
+}
+
 .location-row {
   display: flex;
   flex-direction: row;
@@ -104,6 +143,11 @@ ul.surround:hover {
 
 #social-media-div {
   gap: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #BEC7D5;
 }
 
 .social-media-icons {

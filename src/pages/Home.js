@@ -39,8 +39,6 @@ function Home() {
                     on the AI for Discovery and Self-Driving Labs project.</p>
 
                 <p>Outside of work, I like cars, Formula One, badminton, skiing, and snowboarding.</p>
-
-                <div style={{ height: '50px' }} />
             </div>
         </main>
     )
