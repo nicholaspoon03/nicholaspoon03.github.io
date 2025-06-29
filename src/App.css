@@ -28,6 +28,10 @@
   color: #BEC7D5;
 }
 
+.active-header {
+  color: #00D646;
+}
+
 .column {
   display: flex;
   flex-direction: column;
