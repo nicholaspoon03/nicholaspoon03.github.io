@@ -13,9 +13,8 @@ function Home() {
                 <h1 id="page-name" className="centre-page-content small-margin">Nicholas Poon</h1>
                 <span className="centre-page-content small-margin">Mobile Engineering Intern @ Mozilla | Computer Science @ University of Toronto</span>
                 
-                <div className="location-row small-margin centre-page-content">
+                <div className="row small-margin centre-page-content preceding-icon">
                     <i className="bi bi-geo-alt-fill"></i>
-                    <div style={{ width: '3px' }} />
                     <p1>Toronto, ON, CA</p1>
                 </div>
 

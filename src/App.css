@@ -37,6 +37,12 @@
   flex-direction: column;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .subheading {
   color: #00D646;
 }
@@ -108,7 +114,9 @@ ul.surround {
   border: 2px solid #FFF;
 }
 
-#education-div {
+.card-spacing {
+  display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
@@ -139,10 +147,16 @@ ul.surround {
   cursor: pointer;
 }
 
-.location-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.preceding-icon {
+  gap: 3px;
+}
+
+.duration-icon {
+  padding-left: 6px;
+}
+
+.job-position {
+  color: #A1F1BB;
 }
 
 #social-media-div {

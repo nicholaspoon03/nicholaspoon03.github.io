@@ -1,9 +1,12 @@
+import PageScaffold from "../components/PageScaffold";
 
 function Projects() {
     return (
-        <main>
-            <h1>Projects</h1>
-        </main>
+        <PageScaffold pageName="Projects" pageContent={() => (
+            <div className="page-layout">
+                <h2>Work in progress...</h2>
+            </div>
+        ) } />
     )
 }
 

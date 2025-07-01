@@ -3,7 +3,7 @@ import PageScaffold from "../components/PageScaffold";
 function Education() {
     return (
         <PageScaffold pageName="Education" pageContent={() => (
-            <div id="education-div" className="page-layout">
+            <div className="page-layout card-spacing">
                 <div className="card">
                     <div className="centre-page-content column card-content">
                         <div>
