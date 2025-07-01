@@ -6,7 +6,7 @@ function Header() {
     const location = useLocation()
 
     return (
-        <header className="header">
+        <header id="header" className="site-scaffold-background">
             <Link to="/" className="header-links">
                 <h2 id="header-name" ref={Home}>Nicholas Poon</h2>
             </Link>
@@ -17,7 +17,6 @@ function Header() {
                 <Link to="/education" className={`header-links ${location.pathname === "/education" ? "active-header" : ""}`}>Education</Link>
                 <Link to="/projects" className={`header-links ${location.pathname === "/projects" ? "active-header" : ""}`}>Projects</Link>
             </nav>
-
         </header>
     )
 }

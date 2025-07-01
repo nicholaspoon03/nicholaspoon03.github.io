@@ -1,5 +1,7 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import portrait from '../assets/portrait.jpg'
+import GitHubIcon from '../components/GitHubIcon';
+import LinkedInIcon from '../components/LinkedInIcon';
 
 function Home() {
     return (
@@ -15,19 +17,14 @@ function Home() {
                 
                 <div className="row small-margin centre-page-content preceding-icon">
                     <i className="bi bi-geo-alt-fill"></i>
-                    <p1>Toronto, ON, CA</p1>
+                    <p>Toronto, ON, CA</p>
                 </div>
 
                 <div style={{ height: '40px' }} />
                 
                 <div id="social-media-div" className="centre-page-content">
-                    <a href="https://github.com/nicholaspoon03" target="_blank" rel="noreferrer">
-                        <i className="bi bi-github social-media-icons"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/nicholas-poon/" target="_blank" rel="noreferrer">
-                        <i className="bi bi-linkedin social-media-icons"></i>
-                    </a>
+                    <GitHubIcon className="home-social-media-icons" />
+                    <LinkedInIcon className="home-social-media-icons" />
                 </div>
 
                 <div style={{ height: '40px' }} />

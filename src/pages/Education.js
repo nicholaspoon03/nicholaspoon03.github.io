@@ -1,58 +1,55 @@
+import Card from "../components/Card";
 import PageScaffold from "../components/PageScaffold";
 
 function Education() {
     return (
         <PageScaffold pageName="Education" pageContent={() => (
             <div className="page-layout card-spacing">
-                <div className="card">
-                    <div className="centre-page-content column card-content">
-                        <div>
-                            <b id="uni-title" className="centre-page-content">University of Toronto, Toronto, Ontario, Canada</b>
-                            <p className="centre-page-content">HBSc, Computer Science Specialist, Mathematics Minor</p>
-                            <p className="centre-page-content">2021 - 2026 (Expected)</p>
+                <Card cardContent={() => (
+                    <div>
+                        <b id="uni-title" className="centre-page-content">University of Toronto, Toronto, Ontario, Canada</b>
+                        <p className="centre-page-content">HBSc, Computer Science Specialist, Mathematics Minor</p>
+                        <p className="centre-page-content">2021 - 2026 (Expected)</p>
 
-                            <div id="learn-more-cs-div" className="centre-page-content">
-                                <a className="button" href="https://web.cs.toronto.edu/" target="_blank" rel="noreferrer">
-                                    Learn More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="card">
-                    <div className="centre-page-content column card-content">
-                        <div id="uni-focuses-programs" className="centre-page-content">
-                            <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689b" target="_blank" rel="noreferrer">
-                                <p>Artificial Intelligence Focus</p>
-                            </a>
-                            <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689f" target="_blank" rel="noreferrer">
-                                <p>Computer Systems Focus</p>
-                            </a>
-                            <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689d" target="_blank" rel="noreferrer">
-                                <p>Computer Vision Focus</p>
-                            </a>
-                            <a href="https://www.artsci.utoronto.ca/current/experiential-learning/internships/asip" target="_blank" rel="noreferrer">
-                                <p>Arts and Science Internship Program</p>
-                            </a>
-                            <a href="https://www.artsci.utoronto.ca/current/experiential-learning/research-opportunities/research-opportunities-program" target="_blank" rel="noreferrer">
-                                <p>Research Opportunity Program</p>
+                        <div id="learn-more-cs-div" className="centre-page-content">
+                            <a className="button" href="https://web.cs.toronto.edu/" target="_blank" rel="noreferrer">
+                                Learn More
                             </a>
                         </div>
                     </div>
-                </div>
+                )} />
 
-                <div className="card">
-                    <div className="centre-page-content column card-content">
+                <Card cardContent={() => (
+                    <div id="uni-focuses-programs" className="centre-page-content">
+                        <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689b" target="_blank" rel="noreferrer">
+                            <p>Artificial Intelligence Focus</p>
+                        </a>
+                        <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689f" target="_blank" rel="noreferrer">
+                            <p>Computer Systems Focus</p>
+                        </a>
+                        <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689d" target="_blank" rel="noreferrer">
+                            <p>Computer Vision Focus</p>
+                        </a>
+                        <a href="https://www.artsci.utoronto.ca/current/experiential-learning/internships/asip" target="_blank" rel="noreferrer">
+                            <p>Arts and Science Internship Program</p>
+                        </a>
+                        <a href="https://www.artsci.utoronto.ca/current/experiential-learning/research-opportunities/research-opportunities-program" target="_blank" rel="noreferrer">
+                            <p>Research Opportunity Program</p>
+                        </a>
+                    </div>
+                )} />
+
+                <Card cardContent={() => (
+                    <div>
                         <b className="centre-page-content subheading">Achievements</b>
                         <ul className="surround">
                             <li>Dean's List of Scholars 2021-2022, 2022-2023, 2023-2024</li>
                         </ul>
                     </div>
-                </div>
+                )} />
 
-                <div className="card">
-                    <div className="centre-page-content column card-content">
+                <Card cardContent={() => (
+                    <div>
                         <b className="centre-page-content subheading">Relevant Coursework</b>
 
                         <ul className="surround">
@@ -81,9 +78,9 @@ function Education() {
                             <li>Introduction to Artificial Intelligence</li>
                         </ul>
                     </div>
-                </div>
+                )} />
             </div>
-        ) } />
+        )} />
     )
 }
 

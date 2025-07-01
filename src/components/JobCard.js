@@ -1,10 +1,9 @@
+import Card from "./Card";
 
 function JobCard({ company, positionToDuration, location, tags, description }) {
-    console.log(positionToDuration)
-
     return (
-        <div className="card">
-            <div className="centre-page-content column card-content">
+        <Card cardContent={() => (
+            <div>
                 <div className="row preceding-icon">
                     <i class="bi bi-building-fill"></i>
                     <b className="subheading">{company}</b>
@@ -23,7 +22,6 @@ function JobCard({ company, positionToDuration, location, tags, description }) {
                         </div>
                     </div>
                 ))}
-                {/* <p className="job-position">{position}</p> */}
 
                 <div className="row preceding-icon">
                     <i className="bi bi-geo-alt-fill"></i>
@@ -39,7 +37,7 @@ function JobCard({ company, positionToDuration, location, tags, description }) {
 
                 {description()}
             </div>
-        </div>
+        )} />
     )
 }
 

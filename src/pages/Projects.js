@@ -6,7 +6,7 @@ function Projects() {
             <div className="page-layout">
                 <h2>Work in progress...</h2>
             </div>
-        ) } />
+        )} />
     )
 }
 
