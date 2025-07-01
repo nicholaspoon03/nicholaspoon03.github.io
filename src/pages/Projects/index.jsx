@@ -1,4 +1,4 @@
-import PageScaffold from "../components/PageScaffold";
+import PageScaffold from '../../components/PageScaffold';
 
 function Projects() {
     return (

@@ -1,12 +1,13 @@
+import './style.css';
 
 function PageScaffold({ pageName, pageContent }) {
     return (
         <div className="column">
-            <div style={{ height: '150px' }} />
+            <div id="page-scaffold-top-padding" />
 
             <h1 id="page-name" className="centre-page-content">{pageName}</h1>
 
-            <div style={{ height: '80px' }} />
+            <div id="page-name-page-content-padding" />
 
             {pageContent()}
         </div>

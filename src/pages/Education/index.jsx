@@ -1,5 +1,6 @@
-import Card from "../components/Card";
-import PageScaffold from "../components/PageScaffold";
+import Card from '../../components/Card';
+import PageScaffold from '../../components/PageScaffold';
+import './style.css';
 
 function Education() {
     return (

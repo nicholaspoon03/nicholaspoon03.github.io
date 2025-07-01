@@ -1,0 +1,27 @@
+#home-page-top-padding {
+    height: 150px;
+}
+
+#home-page-section-padding {
+    height: 40px;
+}
+
+#portrait {
+  border-radius: 100px;
+}
+
+#my-name {
+  font-size: 64px;
+}
+
+#social-media-div {
+  gap: 50px;
+}
+
+.home-social-media-icons {
+  font-size: 400%;
+}
+
+.small-margin {
+  margin: 2px;
+}

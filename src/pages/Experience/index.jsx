@@ -1,12 +1,12 @@
-import JobCard from "../components/JobCard";
-import PageScaffold from "../components/PageScaffold";
+import JobCard from '../../components/JobCard';
+import PageScaffold from '../../components/PageScaffold';
 
 function Experience() {
     return (
         <PageScaffold pageName="Experience" pageContent={() => (
             <div className="page-layout">
 
-                <h2 className="experience-subheading">Professional Experience</h2>
+                <h2>Professional Experience</h2>
 
                 <div className="card-spacing">
                     <JobCard
@@ -47,7 +47,7 @@ function Experience() {
                     />
                 </div>
 
-                <h2 className="experience-subheading">Other Experience</h2>
+                <h2>Other Experience</h2>
                 
                 <div className="card-spacing">
                     <JobCard

@@ -1,0 +1,28 @@
+#header {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-name {
+  white-space: nowrap;
+}
+
+#header-links-row {
+  display: flex;
+  gap: 30px;
+}
+
+.header-links {
+  text-decoration: none;
+  color: #BEC7D5;
+}
+
+.active-header {
+  color: #00D646;
+}

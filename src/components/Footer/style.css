@@ -1,0 +1,11 @@
+#footer-icons-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 15px;
+  padding: 0.5rem 1rem ;
+}
+
+.footer-icons {
+  font-size: 120%;
+}

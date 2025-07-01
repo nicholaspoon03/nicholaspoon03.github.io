@@ -1,5 +1,6 @@
-import GitHubIcon from "./GitHubIcon";
-import LinkedInIcon from "./LinkedInIcon";
+import GitHubIcon from '../GitHubIcon';
+import LinkedInIcon from '../LinkedInIcon';
+import './style.css';
 
 function Footer() {
     return (
