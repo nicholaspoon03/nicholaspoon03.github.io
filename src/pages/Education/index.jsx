@@ -13,7 +13,7 @@ function Education() {
                         <p className="centre-page-content">2021 - 2026 (Expected)</p>
 
                         <div id="learn-more-cs-div" className="centre-page-content">
-                            <a className="button" href="https://web.cs.toronto.edu/" target="_blank" rel="noreferrer">
+                            <a className="button" href="https://web.cs.toronto.edu/" target="_blank" rel="noreferrer noopener">
                                 Learn More
                             </a>
                         </div>
@@ -22,19 +22,19 @@ function Education() {
 
                 <Card cardContent={() => (
                     <div id="uni-focuses-programs" className="centre-page-content">
-                        <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689b" target="_blank" rel="noreferrer">
+                        <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689b" target="_blank" rel="noreferrer noopener">
                             <p>Artificial Intelligence Focus</p>
                         </a>
-                        <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689f" target="_blank" rel="noreferrer">
+                        <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689f" target="_blank" rel="noreferrer noopener">
                             <p>Computer Systems Focus</p>
                         </a>
-                        <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689d" target="_blank" rel="noreferrer">
+                        <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689d" target="_blank" rel="noreferrer noopener">
                             <p>Computer Vision Focus</p>
                         </a>
-                        <a href="https://www.artsci.utoronto.ca/current/experiential-learning/internships/asip" target="_blank" rel="noreferrer">
+                        <a href="https://www.artsci.utoronto.ca/current/experiential-learning/internships/asip" target="_blank" rel="noreferrer noopener">
                             <p>Arts and Science Internship Program</p>
                         </a>
-                        <a href="https://www.artsci.utoronto.ca/current/experiential-learning/research-opportunities/research-opportunities-program" target="_blank" rel="noreferrer">
+                        <a href="https://www.artsci.utoronto.ca/current/experiential-learning/research-opportunities/research-opportunities-program" target="_blank" rel="noreferrer noopener">
                             <p>Research Opportunity Program</p>
                         </a>
                     </div>

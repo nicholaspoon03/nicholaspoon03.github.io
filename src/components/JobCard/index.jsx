@@ -13,7 +13,7 @@ function JobCard({ company, positionToDuration, location, tags, description }) {
                     )}
                 />
 
-                {Object.entries(positionToDuration).map (([position, duration]) => (
+                {Object.entries(positionToDuration).map(([position, duration]) => (
                     <div key={position} className="row">
                         <IconText
                             iconClassName="bi bi-briefcase-fill"

@@ -2,7 +2,7 @@ import Card from "../Card";
 import IconText from "../IconText";
 import './styles.css';
 
-function ProjectCard({ projectName, duration, tags, hyperlink, description }) {
+function ProjectCard({ projectName, duration, tags, hyperlinks, description }) {
     return (
         <Card cardContent={() => (
             <div>
@@ -20,15 +20,18 @@ function ProjectCard({ projectName, duration, tags, hyperlink, description }) {
                     )}
                 />
 
-                { hyperlink === null ? "" :
-                    <IconText
-                        iconClassName="bi bi-link-45deg"
-                        textContent={() => (
-                            <a id="project-link" href={hyperlink.link} target="_blank" rel="noreferrer">
-                                <p>{hyperlink.text}</p>
-                            </a>
-                        )}
-                    />
+                { hyperlinks === null ? "" :
+                    hyperlinks.map((hyperlink) => (
+                        <IconText
+                            key={hyperlink.link}
+                            iconClassName="bi bi-link-45deg"
+                            textContent={() => (
+                                <a id="project-link" href={hyperlink.link} target="_blank" rel="noreferrer noopener">
+                                    <p>{hyperlink.text}</p>
+                                </a>
+                            )}
+                        />
+                    ))
                 }
 
                 { tags === null ? "" :
