@@ -26,7 +26,7 @@ function JobCard({ company, positionToDuration, location, tags, description }) {
                         />
 
                         <IconText
-                            iconClassName="bi bi-calendar-fill duration-icon"
+                            iconClassName="bi bi-calendar-fill experience-duration-icon"
                             textContent={() => (
                                 <p>{duration}</p>
                             )}
