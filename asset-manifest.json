@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.1c849e72.css",
-    "main.js": "/static/js/main.8ce17b0f.js",
+    "main.js": "/static/js/main.25983e72.js",
     "static/js/453.195b869a.chunk.js": "/static/js/453.195b869a.chunk.js",
+    "static/media/ai_for_discovery_and_sdl_poster.pdf": "/static/media/ai_for_discovery_and_sdl_poster.a06cab56400b3b52389d.pdf",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "static/media/portrait.jpg": "/static/media/portrait.dbb4161291fdae201934.jpg",
     "index.html": "/index.html",
     "main.1c849e72.css.map": "/static/css/main.1c849e72.css.map",
-    "main.8ce17b0f.js.map": "/static/js/main.8ce17b0f.js.map",
+    "main.25983e72.js.map": "/static/js/main.25983e72.js.map",
     "453.195b869a.chunk.js.map": "/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c849e72.css",
-    "static/js/main.8ce17b0f.js"
+    "static/js/main.25983e72.js"
   ]
 }
