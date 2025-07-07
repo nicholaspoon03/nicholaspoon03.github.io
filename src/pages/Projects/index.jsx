@@ -10,7 +10,7 @@ function Projects() {
                     <ProjectCard
                         projectName="Personal Website"
                         duration="June 2025 - Present"
-                        tags="React, Boostrap, Material UI, CSS"
+                        tags="React, Bootstrap, Material UI, CSS"
                         hyperlinks={[{
                             text: "GitHub repository",
                             link: "https://github.com/nicholaspoon03/nicholaspoon03.github.io/",
@@ -83,13 +83,13 @@ function Projects() {
                         description={() => (
                             <ul>
                                 <li>
-                                    Created a web application to operate and monitor the full cycle of material discovery in the self-driving lab,
-                                    with <b>Python</b>, <b>Flask</b>, <b>SQLAlchemy</b>, <b>HTML</b>, and <b>CSS</b>; it will be used
-                                    on <b>$29 million</b> worth of robots and will boost efficiency for <b>10+</b> scientists
+                                    Supervised by Professor Alán Aspuru-Guzik and mentored by Doctor Mohammad Ghazi Vakili, I created a web application to operate and
+                                    monitor the full cycle of material discovery in the self-driving lab, with <b>Python</b>, <b>Flask</b>, <b>SQLAlchemy</b>, <b>HTML</b>,
+                                    and <b>CSS</b>; it will be used on <b>$29 million</b> worth of robots and will boost efficiency for <b>10+</b> scientists
                                 </li>
                                 <li>
-                                    This project aims at <b>automating science experiments</b>, with the goal of <b>discovering new molecules</b>, which can be used
-                                    for finding new potential drugs, by creating <b>'self-driving labs'</b>.
+                                    This project aims to <b>automate science experiments</b> by creating <b>'self-driving labs'</b>, with the goal of <b>discovering new molecules</b>, which can be used
+                                    for finding new potential drugs.
                                 </li>
                             </ul>
                         )}
@@ -141,7 +141,7 @@ function Projects() {
                     <ProjectCard
                         projectName="The Correlation Between Crime Rates and COVID-19 Cases in Canada"
                         duration="Nov. 2021 - Dec. 2021"
-                        tags="Python, Tkinter, Pandas, Numpy, MatplotLib"
+                        tags="Python, Tkinter, Pandas, Numpy, Matplotlib"
                         hyperlinks={[{
                             text: "GitHub repository",
                             link: "https://github.com/nicholaspoon03/Covid-Crime-Project",
@@ -149,7 +149,7 @@ function Projects() {
                         description={() => (
                             <ul>
                                 <li>
-                                    In a group of 4, we used <b>Python</b>, <b>Tkinter</b>, <b>Pandas</b>, <b>Numpy</b>, and <b>MatplotLib</b> to <b>analyze</b> and <b>graph</b> the
+                                    In a group of 4, we used <b>Python</b>, <b>Tkinter</b>, <b>Pandas</b>, <b>Numpy</b>, and <b>Matplotlib</b> to <b>analyze</b> and <b>graph</b> the
                                     correlation between crime rates and COVID-19 cases in Canada.
                                 </li>
                             </ul>
@@ -157,7 +157,7 @@ function Projects() {
                     />
 
                     <ProjectCard
-                        projectName="Space shooter"
+                        projectName="Space Shooter"
                         duration="June 2021 - June 2021"
                         tags="Python, Pygame"
                         hyperlinks={null}
@@ -182,7 +182,7 @@ function Projects() {
                         description={() => (
                             <ul>
                                 <li>
-                                    As a group of 4, we used <b>Python</b>, <b>Pytest</b>, our knowledge of basic data structures such as <b>loops</b>, <b>lists</b>, and <b>dictionaries</b>, <b>functions</b>,
+                                    As a group of 4, we used <b>Python</b>, <b>Pytest</b>, our knowledge of <b>basic data structures</b> such as <b>loops</b>, <b>lists</b>, and <b>dictionaries</b>, <b>functions</b>,
                                     and <b>file read & write</b> to create a <b>command line program</b> that would allow a teacher to input student marks for all of their assignments.
                                 </li>
                             </ul>
@@ -204,7 +204,7 @@ function Projects() {
                                 </li>
                                 <li>
                                     Inspired by my newfound accounting knowledge, I created an accounting app that automatically generates a chart of accounts, trial balance, and income statement with a simple
-                                    input of assets, liabilities, and owner's equity, through <b>command line interface (CLI)</b>.
+                                    input of assets, liabilities, and owner's equity, through a <b>command line interface (CLI)</b>.
                                 </li>
                             </ul>
                         )}
@@ -218,11 +218,11 @@ function Projects() {
                         description={() => (
                             <ul>
                                 <li>
-                                    In a group of 2, we used <b>Python</b> and the <b>Arcade</b> library to create a side-scrolling game, where the player is a spaceship and the objective of is to avoid as many
-                                    stars as possible to travel the longest distance. Along the way, there are coins that can be collected for powerups.
+                                    In a group of 2, we used <b>Python</b> and the <b>Arcade</b> library to create a side-scrolling game, where the player is a spaceship and the objective is to avoid as many
+                                    stars as possible and travel the longest distance. Along the way, there are coins that can be collected for powerups.
                                 </li>
                                 <li>
-                                    This is the first application I have ever been a part of.
+                                    This is the first application I have ever been a part of creating.
                                 </li>
                             </ul>
                         )}

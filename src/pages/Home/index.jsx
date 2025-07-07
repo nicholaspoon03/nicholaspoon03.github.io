@@ -34,7 +34,7 @@ function Home() {
 
                 <div id="home-page-section-padding" />
 
-                <p>Hello! My name is Nicholas Poon and I am a fourth year computer science specialist and math minor at the
+                <p>Hello! My name is Nicholas Poon and I am a fourth year student, specializing in computer science and minoring in mathematics at the
                     University of Toronto. I am currently a software engineer intern on the Android team at Mozilla, working
                     on Firefox for Android. Previously, I was an undergraduate research assistant at the Matter Lab, working
                     on the AI for Discovery and Self-Driving Labs project.</p>

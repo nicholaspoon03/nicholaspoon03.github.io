@@ -22,11 +22,11 @@ function Experience() {
                                 </li>
                                 <li>
                                     Revamped Firefox-Android downloads by adding live downloads with the option to pause, resume, cancel, and retry on the
-                                    downloads screen, and more, benefitting <b>10 million+</b> daily users and responding to one of our top user complaints
+                                    downloads screen, by using <b>object-oriented programming</b> concepts, benefitting <b>10 million+</b> daily users and responding to one of our top user complaints
                                 </li>
                                 <li>
-                                    Made multiple debug tools for Firefox-Android, including one with Mozilla Glean APIs and <b>Redux</b> that allows test metric
-                                    pings to be sent for experimentation and testing, benefitting over <b>100</b> engineers
+                                    Made multiple debug tools for Firefox-Android, including one that allows test metric pings to be sent for experimentation and testing, using Mozilla Glean APIs
+                                    and <b>Redux</b>, benefitting over <b>100</b> engineers
                                 </li>
                                 <li>
                                     Worked on the Firefox-Android tab strip project to <b>enhance large screen support</b> for our users and worked on Firefox-Android
@@ -38,8 +38,8 @@ function Experience() {
                                 </li>
                                 <li>
                                     <b>Mentored</b> an intern by sharing my knowledge and experience and <b>led</b> their project for Firefox-Android WebCompat Reporter
-                                    improvements, to improve the quality of reports and benefit <b>15</b> engineers and our users, indirectly; my responsibilities
-                                    included <b>project scoping</b>, <b>code reviews</b>, <b>working with our UX, Product, and QA teams to prioritize work and discuss feasibility</b>,
+                                    enhancements, to improve the quality of reports and benefit <b>15</b> engineers and our users, indirectly; my responsibilities
+                                    included <b>project scoping</b>, <b>code reviews</b>, <b>working with UX, Product, and QA teams to prioritize work</b>,
                                     and <b>code pairing</b>
                                 </li>
                             </ul>
@@ -61,8 +61,8 @@ function Experience() {
                         description={() => (
                             <ul>
                                 <li>
-                                    Took on a <b>leadership</b> role to teach STEM related lessons and guide students through activities, using my orgnizational, teamwork, and time
-                                    management skills
+                                    Took on a <b>leadership</b> role to teach STEM related lessons, guide students through activities, and assist struggling students with patience,
+                                    by using my organizational, teamwork, and time management skills
                                 </li>
                                 <li>Paid <b>close attention to detail</b> to observe the students in the class</li>
                                 <li><b>Mentored</b> new employees by sharing my teaching experience and lesson knowledge</li>
@@ -82,6 +82,10 @@ function Experience() {
                                     Fed the ballots into the tabulator and printed the results at the end of the day, gaining experience working in a fast-paced environment and
                                     improving my interpersonal communication skills.
                                 </li>
+                                <li>
+                                    Completed pre-event and post-event logic and accuracy testing on the tabulator, demonstrating my ability to reliably follow instructions and
+                                    work independently
+                                </li>
                             </ul>
                         )}
                     />
@@ -94,7 +98,7 @@ function Experience() {
                         description={() => (
                             <ul>
                                 <li>
-                                    Enhanced my explanation and communication skills by explaining concepts in a clear and concise way.
+                                    Enhanced my explanation and communication skills by describing concepts in a clear and concise way.
                                 </li>
                                 <li>
                                     I was able to help one of my students improve their grade 11 math grade by <b>20%</b>.
