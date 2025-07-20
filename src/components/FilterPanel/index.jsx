@@ -1,13 +1,22 @@
 import { Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 import "./style.css";
 
-function FilterPanel({ expanded, activeFilters, filterList, onFilterClick, onDropdownClick }) {
+function FilterPanel({ expanded, activeFilters, filterList, onFilterClick, onDropdownClick, onClearClick }) {
     return (
         <div className="page-layout">
-            <button className="outlined-button row chevron" onClick={onDropdownClick}>
-                <p>Filter</p>
-                { expanded ? <i className="bi bi-chevron-up"></i> : <i className="bi bi-chevron-down"></i> }
-            </button>
+            <div id="filter-panel-controls" className="row">
+                <button className="outlined-button row chevron" onClick={onDropdownClick}>
+                    <p>Filter</p>
+                    { expanded ? <i className="bi bi-chevron-up"></i> : <i className="bi bi-chevron-down"></i> }
+                </button>
+
+                { expanded ?
+                    <button className="outlined-button" onClick={onClearClick}>
+                        <p>Clear</p>
+                    </button>
+                    : ""
+                }
+            </div>
 
             { expanded ? 
                 <div id="filter-box" className="open">

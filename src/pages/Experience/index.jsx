@@ -37,9 +37,11 @@ function Experience() {
 
     useEffect((() => {
         setFilterList(
-            professionalExperiences.concat(otherExperiences).map((exp) => (
-                exp.tags
-            )).flat()
+            new Set(
+                professionalExperiences.concat(otherExperiences).map((exp) => (
+                    exp.tags
+                )).flat()
+            )
         )
     }), []);
 
@@ -64,6 +66,7 @@ function Experience() {
                     filterList={filterList}
                     onFilterClick={(newFilter) => (onFilterClick(newFilter))}
                     onDropdownClick={() => (setFilterPanelExpanded(!filterPanelExpanded))}
+                    onClearClick={() => (setActiveFilters(new Set()))}
                 />
 
                 {filteredProfessionalExperience.length === 0 ? "" : 

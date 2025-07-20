@@ -1,3 +1,7 @@
+#filter-panel-controls {
+    gap: 8px;
+}
+
 #filter-box-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(auto, 166px));

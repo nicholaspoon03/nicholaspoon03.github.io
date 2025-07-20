@@ -1,9 +1,9 @@
 #home-page-top-padding {
-    height: 150px;
+  height: 150px;
 }
 
 #home-page-section-padding {
-    height: 40px;
+  height: 40px;
 }
 
 #portrait {
@@ -12,6 +12,7 @@
 
 #my-name {
   font-size: 64px;
+  color: #00D646;
 }
 
 #social-media-div {

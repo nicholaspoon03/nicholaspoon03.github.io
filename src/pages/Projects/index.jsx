@@ -1,11 +1,36 @@
+import FilterPanel from '../../components/FilterPanel/index.jsx';
 import PageScaffold from '../../components/PageScaffold';
 import ProjectCard from '../../components/ProjectCard';
 import { projects } from '../../data/projects.tsx';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Projects() {
     const [ filterPanelExpanded, setFilterPanelExpanded ] = useState(false);
     const [ activeFilters, setActiveFilters ] = useState(new Set());
+    const [ filterList, setFilterList ] = useState(new Set());
+    const [ filteredProjects, setFilteredProjects ] = useState(projects);
+
+    useEffect((() => {
+        if (activeFilters.size !== 0) {
+            setFilteredProjects(
+                projects.filter((p) => (
+                    p.tags.some((tag) => (
+                        activeFilters.has(tag)
+                    ))
+                ))
+            )
+        } else {
+            setFilteredProjects(projects);
+        }
+    }), [ activeFilters ]);
+
+    useEffect((() => {
+        setFilterList(
+            new Set(
+                projects.map((p) => (p.tags)).flat()
+            )
+        )
+    }), []);
 
     const onFilterClick = (newFilter) => {
         if (activeFilters.has(newFilter)) {
@@ -21,8 +46,18 @@ function Projects() {
     return (
         <PageScaffold pageName="Projects" pageContent={() => (
             <div className="page-layout">
+
+                <FilterPanel
+                    expanded={filterPanelExpanded}
+                    activeFilters={activeFilters}
+                    filterList={filterList}
+                    onFilterClick={(newFilter) => (onFilterClick(newFilter))}
+                    onDropdownClick={() => (setFilterPanelExpanded(!filterPanelExpanded))}
+                    onClearClick={() => (setActiveFilters(new Set()))}
+                />
+
                 <div className="card-spacing">
-                    {projects.map((p, index) => (
+                    {filteredProjects.map((p, index) => (
                         <ProjectCard
                             key={index}
                             projectName={p.name}
@@ -35,8 +70,6 @@ function Projects() {
                         />
                     ))}
                 </div>
-
-                <h2>Work in progress...</h2>
             </div>
         )} />
     )

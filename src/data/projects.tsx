@@ -61,11 +61,11 @@ export const projects: Project[] = [
                 link: "https://www.matter.toronto.edu/basic-content-page/ai-for-discovery-and-self-driving-labs",
             },
             {
-                text: "Research paper 1",
+                text: "Referenced research paper 1",
                 link: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0229862"
             },
             {
-                text: "Research paper 2",
+                text: "Referenced research paper 2",
                 link: "https://chemrxiv.org/engage/chemrxiv/article-details/64cbe80adfabaf06ffa61204"
             },
             {
