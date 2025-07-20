@@ -1,3 +1,7 @@
 .preceding-icon {
   gap: 3px;
 }
+
+.icon-text {
+  flex-wrap: wrap; 
+}

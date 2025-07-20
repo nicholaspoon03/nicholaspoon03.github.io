@@ -1,8 +1,9 @@
 import Card from "../Card";
 import IconText from "../IconText";
-import './styles.css';
+import TagButton from "../TagButton";
+import './style.css';
 
-function ProjectCard({ projectName, duration, tags, hyperlinks, description }) {
+function ProjectCard({ projectName, duration, tags, hyperlinks, description, selectedTags, setFilter }) {
     return (
         <Card cardContent={() => (
             <div>
@@ -20,7 +21,7 @@ function ProjectCard({ projectName, duration, tags, hyperlinks, description }) {
                     )}
                 />
 
-                { hyperlinks === null ? "" :
+                { hyperlinks.length === 0 ? "" :
                     hyperlinks.map((hyperlink) => (
                         <IconText
                             key={hyperlink.link}
@@ -34,16 +35,23 @@ function ProjectCard({ projectName, duration, tags, hyperlinks, description }) {
                     ))
                 }
 
-                { tags === null ? "" :
+                { tags.length === 0 ? "" :
                     <IconText
-                        iconClassName="bi bi-tags"
+                        iconClassName="bi bi-tags-fill"
                         textContent={() => (
-                            <p>{tags}</p>
+                            tags.map((tag, index) => (
+                                <TagButton
+                                    key={index}
+                                    text={tag}
+                                    selected={selectedTags.has(tag)}
+                                    setFilter={setFilter}
+                                />
+                            ))
                         )}
                     />
                 }
 
-                {description()}
+                {description}
             </div>
         )} />
     )

@@ -1,8 +1,9 @@
 import Card from '../Card';
 import IconText from '../IconText';
+import TagButton from '../TagButton';
 import './style.css';
 
-function JobCard({ company, positionToDuration, location, tags, description }) {
+function JobCard({ company, positionToDuration, location, tags, description, selectedTags, setFilter }) {
     return (
         <Card cardContent={() => (
             <div>
@@ -41,16 +42,23 @@ function JobCard({ company, positionToDuration, location, tags, description }) {
                     )}
                 />
 
-                { tags === null ? "" :
+                { tags.length === 0 ? "" :
                     <IconText
-                        iconClassName="bi bi-tags"
+                        iconClassName="bi bi-tags-fill"
                         textContent={() => (
-                            <p>{tags}</p>
+                            tags.map((tag, index) => (
+                                <TagButton
+                                    key={index}
+                                    text={tag}
+                                    selected={selectedTags.has(tag)}
+                                    setFilter={setFilter}
+                                />
+                            ))
                         )}
                     />
                 }
 
-                {description()}
+                {description}
             </div>
         )} />
     )
