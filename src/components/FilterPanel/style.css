@@ -1,11 +1,19 @@
+#filter-panel-div {
+    width: 100%;
+    box-sizing: "border-box";
+    padding: 1rem; 
+}
+
 #filter-panel-controls {
     gap: 8px;
 }
 
 #filter-box-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(auto, 166px));
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+    max-height: 600px;
+    overflow-y: auto;
 }
 
 #filter-box {
