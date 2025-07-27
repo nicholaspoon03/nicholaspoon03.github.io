@@ -2,13 +2,18 @@ import FilterPanel from '../../components/FilterPanel/index.jsx';
 import PageScaffold from '../../components/PageScaffold';
 import ProjectCard from '../../components/ProjectCard';
 import { projects } from '../../data/projects.tsx';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 function Projects() {
     const [ filterPanelExpanded, setFilterPanelExpanded ] = useState(false);
     const [ activeFilters, setActiveFilters ] = useState(new Set());
-    const [ filterList, setFilterList ] = useState(new Set());
     const [ filteredProjects, setFilteredProjects ] = useState(projects);
+
+    const filterList = useMemo((() => {
+        return new Set(
+            projects.map((p) => (p.tags)).flat()
+        )
+    }), []);
 
     useEffect((() => {
         if (activeFilters.size !== 0) {
@@ -23,14 +28,6 @@ function Projects() {
             setFilteredProjects(projects);
         }
     }), [ activeFilters ]);
-
-    useEffect((() => {
-        setFilterList(
-            new Set(
-                projects.map((p) => (p.tags)).flat()
-            )
-        )
-    }), []);
 
     const onFilterClick = (newFilter) => {
         if (activeFilters.has(newFilter)) {

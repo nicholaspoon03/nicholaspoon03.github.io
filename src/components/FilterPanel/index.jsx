@@ -19,7 +19,7 @@ function FilterPanel({ expanded, activeFilters, filterList, onFilterClick, onDro
             </div>
 
             { expanded ? 
-                <div id="filter-box" className="open">
+                <div id="filter-box">
                     <FormGroup id="filter-box-grid">
                         {Array.from(filterList).sort().map((filter, index) => (
                             <FormControlLabel

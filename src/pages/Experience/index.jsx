@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import JobCard from '../../components/JobCard';
 import PageScaffold from '../../components/PageScaffold';
 import { otherExperiences } from '../../data/otherExperiences.tsx';
@@ -8,9 +8,16 @@ import FilterPanel from '../../components/FilterPanel/index.jsx';
 function Experience() {
     const [ filterPanelExpanded, setFilterPanelExpanded ] = useState(false);
     const [ activeFilters, setActiveFilters ] = useState(new Set());
-    const [ filterList, setFilterList ] = useState(new Set());
     const [ filteredProfessionalExperience, setFilteredProfessionalExperience ] = useState(professionalExperiences);
     const [ filteredOtherExperience, setFilteredOtherExperience ] = useState(otherExperiences);
+
+    const filterList = useMemo((() => {
+        return new Set(
+            professionalExperiences.concat(otherExperiences).map((exp) => (
+                exp.tags
+            )).flat()
+        )
+    }), []);
 
     useEffect((() => {
         if (activeFilters.size !== 0) {
@@ -34,16 +41,6 @@ function Experience() {
             setFilteredOtherExperience(otherExperiences);
         }
     }), [ activeFilters ]);
-
-    useEffect((() => {
-        setFilterList(
-            new Set(
-                professionalExperiences.concat(otherExperiences).map((exp) => (
-                    exp.tags
-                )).flat()
-            )
-        )
-    }), []);
 
     const onFilterClick = (newFilter) => {
         if (activeFilters.has(newFilter)) {

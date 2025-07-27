@@ -21,7 +21,7 @@ export const professionalExperiences: Experience[] = [
                     downloads screen, by using <b>object-oriented programming</b> concepts, <b>Kotlin flow</b>, and <b>coroutines</b>, benefitting <b>10 million+</b> daily users and responding to one of our top user complaints
                 </li>
                 <li>
-                    Made multiple debug tools for Firefox-Android, including one that allows test metric pings to be sent for experimentation and testing, using <b>Redux</b>, <b>DataStore</b>, and <b>SharedPreferences</b> benefitting
+                    Made multiple debug tools for Firefox-Android, including one that allows test metric pings to be sent for experimentation and testing, using <b>Redux</b>, <b>DataStore</b>, and <b>SharedPreferences</b>, benefitting
                     over <b>100</b> engineers
                 </li>
                 <li>
@@ -31,7 +31,7 @@ export const professionalExperiences: Experience[] = [
                 </li>
                 <li>
                     Worked with design teams and followed <b>Figma</b> prototypes to implement reusable, custom TextField, Dropdown, and
-                    Snackbar <b>Android Components</b> using <b>Kotlin</b> and <b>Jetpack Compose</b> for our <b>open source</b> codebase
+                    Snackbar <b>Android Components</b> for our <b>open source</b> codebase, using <b>Kotlin</b> and <b>Jetpack Compose</b>
                 </li>
                 <li>
                     <b>Mentored</b> an intern by sharing my knowledge and experience and <b>led</b> their project for Firefox-Android WebCompat Reporter
