@@ -2,13 +2,29 @@ import { Link, useLocation } from 'react-router-dom';
 import './style.css';
 import Home from "../../pages/Home";
 import { Drawer } from '@mui/material';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Header() {
     const location = useLocation()
     const [ drawerOpen, setDrawerOpen ] = useState(false);
 
     const dismissDrawer = () => (setDrawerOpen(false))
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(width >= 992px)');
+
+        const dismissOnLargeScreen = (event) => {
+            if (event.matches) {
+                dismissDrawer()
+            }
+        }
+
+        mediaQuery.addEventListener("change", dismissOnLargeScreen);
+
+        return () => {
+            mediaQuery.removeEventListener("change", dismissOnLargeScreen);
+        }
+    }, []);
 
     return (
         <header id="header" className="site-scaffold-background">
