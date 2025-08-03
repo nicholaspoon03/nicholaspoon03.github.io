@@ -1,9 +1,14 @@
 import { Link, useLocation } from 'react-router-dom';
 import './style.css';
 import Home from "../../pages/Home";
+import { Drawer } from '@mui/material';
+import { useState } from 'react';
 
 function Header() {
     const location = useLocation()
+    const [ drawerOpen, setDrawerOpen ] = useState(false);
+
+    const dismissDrawer = () => (setDrawerOpen(false))
 
     return (
         <header id="header" className="site-scaffold-background">
@@ -17,6 +22,23 @@ function Header() {
                 <Link to="/education" className={`header-links ${location.pathname === "/education" ? "active-header" : ""}`}>Education</Link>
                 <Link to="/projects" className={`header-links ${location.pathname === "/projects" ? "active-header" : ""}`}>Projects</Link>
             </nav>
+
+            {/* Hamburger button for smaller screens */}
+            <i id="hamburger-menu" className="bi bi-list" onClick={() => (setDrawerOpen(true))}></i>
+
+            <Drawer
+                slotProps={{
+                    paper: {className: "drawer"}
+                }}
+                anchor="right"
+                open={drawerOpen}
+                onClose={() => (dismissDrawer())}
+            >
+                <Link to="/" className={`header-links ${location.pathname === "/" ? "active-header" : ""}`} onClick={() => (dismissDrawer())}>Home</Link>
+                <Link to="/experience" className={`header-links ${location.pathname === "/experience" ? "active-header" : ""}`} onClick={() => (dismissDrawer())}>Experience</Link>
+                <Link to="/education" className={`header-links ${location.pathname === "/education" ? "active-header" : ""}`} onClick={() => (dismissDrawer())}>Education</Link>
+                <Link to="/projects" className={`header-links ${location.pathname === "/projects" ? "active-header" : ""}`} onClick={() => (dismissDrawer())}>Projects</Link>
+            </Drawer>
         </header>
     )
 }
