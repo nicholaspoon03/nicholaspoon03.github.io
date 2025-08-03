@@ -12,4 +12,5 @@
 
 .card-content {
   padding: 1rem 8px;
+  overflow-x: auto;
 }
