@@ -2,6 +2,10 @@
   color: #A1F1BB;
 }
 
+.position-duration-div {
+  flex-wrap: wrap;
+}
+
 .experience-duration-icon {
   padding-left: 6px;
 }
