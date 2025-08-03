@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.e71d7bc6.css",
+    "main.css": "/static/css/main.c2b1dc07.css",
     "main.js": "/static/js/main.683928c1.js",
     "static/js/453.195b869a.chunk.js": "/static/js/453.195b869a.chunk.js",
     "static/media/ai_for_discovery_and_sdl_poster.pdf": "/static/media/ai_for_discovery_and_sdl_poster.a06cab56400b3b52389d.pdf",
@@ -8,12 +8,12 @@
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "static/media/portrait.jpg": "/static/media/portrait.dbb4161291fdae201934.jpg",
     "index.html": "/index.html",
-    "main.e71d7bc6.css.map": "/static/css/main.e71d7bc6.css.map",
+    "main.c2b1dc07.css.map": "/static/css/main.c2b1dc07.css.map",
     "main.683928c1.js.map": "/static/js/main.683928c1.js.map",
     "453.195b869a.chunk.js.map": "/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e71d7bc6.css",
+    "static/css/main.c2b1dc07.css",
     "static/js/main.683928c1.js"
   ]
 }
