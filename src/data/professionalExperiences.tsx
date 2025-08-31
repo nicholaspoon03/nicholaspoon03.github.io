@@ -4,7 +4,7 @@ export const professionalExperiences: Experience[] = [
     {
         company: "Mozilla",
         positionToDuration: {
-            "Mobile Engineering Intern": "May 2024 - Present"
+            "Mobile Engineering Intern": "May 2024 - Aug. 2025"
         },
         location: "Toronto, ON, CAN",
         tags: ["Android", "Kotlin", "Python", "Jetpack Compose", "CI tools", "JUnit", "Android Espresso", "Sentry", "Redux", "Open source", "Git", "Phabricator", "GitHub", "Firebase",

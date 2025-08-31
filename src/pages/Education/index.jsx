@@ -10,7 +10,7 @@ function Education() {
                     <div>
                         <b id="uni-title" className="centre-page-content">University of Toronto, Toronto, Ontario, Canada</b>
                         <p className="centre-page-content">HBSc, Computer Science Specialist, Mathematics Minor</p>
-                        <p className="centre-page-content">Sept. 2021 - May 2026 (Expected)</p>
+                        <p className="centre-page-content">Sept. 2021 - June 2026 (Expected)</p>
 
                         <div id="learn-more-cs-div" className="centre-page-content">
                             <a className="button" href="https://web.cs.toronto.edu/" target="_blank" rel="noreferrer noopener">

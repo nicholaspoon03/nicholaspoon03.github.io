@@ -15,7 +15,7 @@ function Home() {
                     <img id="portrait" src={portrait} alt="portrait"></img>
                 </div>
                 <h1 id="my-name" className="centre-page-content small-margin">Nicholas Poon</h1>
-                <span className="centre-page-content small-margin">Mobile Engineering Intern @ Mozilla | Computer Science @ University of Toronto</span>
+                <span className="centre-page-content small-margin">Computer Science @ University of Toronto | Prev @ Mozilla</span>
                 
                 <IconText
                     iconClassName="bi bi-geo-alt-fill"
@@ -35,8 +35,8 @@ function Home() {
                 <div id="home-page-section-padding" />
 
                 <p>Hello! My name is Nicholas Poon and I am a fourth year student, specializing in computer science and minoring in mathematics at the
-                    University of Toronto. I am currently a software engineer intern on the Android team at Mozilla, working
-                    on Firefox for Android. Previously, I was an undergraduate research assistant at the Matter Lab, working
+                    University of Toronto. Previously, I was a software engineer intern on the Android team at Mozilla, working
+                    on Firefox for Android. Prior to that, I was an undergraduate research assistant at the Matter Lab, working
                     on the AI for Discovery and Self-Driving Labs project.</p>
 
                 <p>Outside of work, I like cars, Formula One, badminton, skiing, and snowboarding.</p>

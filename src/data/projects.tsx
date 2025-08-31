@@ -4,7 +4,7 @@ import poster from '../assets/ai_for_discovery_and_sdl_poster.pdf';
 export const projects: Project[] = [
     {
         name: "Personal Website",
-        duration: "June 2025 - Present",
+        duration: "June 2025 - Aug. 2025",
         tags: ["React", "JavaScript", "CSS", "Bootstrap", "Material UI", "GitHub"],
         hyperlinks: [{
             text: "GitHub repository",
