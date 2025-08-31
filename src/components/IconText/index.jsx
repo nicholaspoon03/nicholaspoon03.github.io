@@ -2,7 +2,7 @@ import './style.css';
 
 function IconText({ iconClassName, textContent, className="" }) {
     return (
-        <div className={`row preceding-icon icon-text ${className}`}>
+        <div className={`row preceding-icon ${className}`}>
             <i className={iconClassName}></i>
             {textContent()}
         </div>

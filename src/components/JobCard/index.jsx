@@ -15,7 +15,7 @@ function JobCard({ company, positionToDuration, location, tags, description, sel
                 />
 
                 {Object.entries(positionToDuration).map(([position, duration]) => (
-                    <div key={position} className="row position-duration-div">
+                    <div key={position} className="row">
                         <IconText
                             iconClassName="bi bi-briefcase-fill"
                             textContent={() => (
